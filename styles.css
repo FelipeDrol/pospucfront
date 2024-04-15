@@ -1,0 +1,77 @@
+html {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    width: 100%;
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+body{
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+header{
+    width: 100%;
+    background-color: #49a5e1;
+    color: white;
+}
+header h1{
+    text-align: center;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    padding: 10px 0;
+}
+#opcoes{
+    width: 310px;
+    margin: 50px auto;
+}
+#login{
+    width: 310px;
+    margin: 50px auto;
+}
+#usuarios{
+    width: 80%;
+    margin: 50px auto;
+}
+#usuario{
+    width: 80%;
+    margin: 50px auto;
+}
+#secoes{
+    width: 80%;
+    margin: 50px auto;
+}
+#secao{
+    width: 80%;
+    margin: 50px auto;
+}
+#documentos{
+    width: 80%;
+    margin: 50px auto;
+}
+#documento{
+    width: 80%;
+    margin: 50px auto;
+}
+.linha{
+    margin: 10px 0;
+}
+button{
+    background-color: #49a5e1;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    border: 0;
+    cursor: pointer;
+    margin: 5px;
+}
+button:disabled{
+    background-color:#333942;
+    cursor: default;
+}
+#email {
+    height: 25px;
+    border-radius: 5px;
+}

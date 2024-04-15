@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Solicitação de Documentos</title>
+</head>
+<body>
+    <header>
+        <h1 id="titulo">Login</h1>
+    </header>
+
+    <section id="login">
+        <div class="linha">
+            <span>E-mail: </span>
+            <input type="text" id="email" >
+            <button onclick="login()">Acessar</button>
+        </div>
+    </section>
+
+    <section id="opcoes" style="display: none;">
+        <div class="linha">
+            <span>Usuários: </span>
+            <button onclick="getUsuarios()">Acessar</button>
+        </div>
+        <div class="linha">
+            <span>Seções: </span>
+            <button onclick="getSecoes()">Acessar</button>
+        </div>
+    </section>
+
+    <section id="usuarios" style="display: none;">
+        <div class="linha">
+            <span></span>
+            <button onclick="adicionarUsuarios()">Adicionar</button>
+            <button onclick="exibirMain()">Voltar</button>
+        </div>
+    </section>
+
+    <section id="usuario" style="display: none;">
+        <div class="linha">
+            <span class="fieldTitle">Administrador</span>
+            <select id="fieldAdministrador">
+                <option value="">--</option>
+                <option value="true">Sim</option>
+                <option value="false">Não</option>
+            </select>
+        </div>
+        <div class="linha">
+            <span class="fieldTitle">E-mail</span>
+            <input type="text" id="fieldEmail">
+        </div>
+        <div class="linha">
+            <span class="fieldTitle">Nome</span>
+            <input type="text"  id="usuarioNome">
+        </div>
+        <div class="linha" id="usuarioEditar">
+            <span class="fieldTitle"></span>
+        </div>
+    </section>
+
+    <section id="secoes" style="display: none;">
+        <div class="linha">
+            <span></span>
+            <button onclick="adicionarSecoes()">Adicionar</button>
+            <button onclick="exibirMain()">Voltar</button>
+        </div>
+    </section>
+
+    <section id="secao" style="display: none;">
+        <div class="linha">
+            <span class="fieldTitle">Nome</span>
+            <input type="text"  id="secaoNome">
+        </div>
+        <div class="linha" id="secaoEditar">
+            <span class="fieldTitle"></span>
+        </div>
+    </section>
+
+    <section id="documentos" style="display: none;">
+        <div class="linha">
+            <span></span>
+            <button id="adicionarDocumentos" onclick="adicionarDocumentos()">Adicionar</button>
+            <button id="voltarDocumentos" onclick="getSecoes()">Voltar</button>
+        </div>
+    </section>
+
+    <section id="documento" style="display: none;">
+        <div class="linha">
+            <span class="fieldTitle">Nome</span>
+            <input type="text" id="documentoNome">
+        </div>
+        <div class="linha">
+            <span class="fieldTitle">secao_id</span>
+            <input type="text"  id="documentoSecao">
+        </div>
+        <div class="linha" id="documentoEditar">
+            <span class="fieldTitle"></span>
+        </div>
+    </section>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
